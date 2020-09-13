@@ -3,4 +3,4 @@ spring:
     base-url: http://192.168.230.133
   sleuth:
     sampler:
-      probability:0.1
+      probability: 0.1
