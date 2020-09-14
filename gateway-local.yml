@@ -1,0 +1,16 @@
+server:
+  port: 80
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: micro-city
+          uri: lb://MICRO-CITY
+          predicates:
+            - Path=/city/**
+        - id: micro-system
+          uri: lb://MICRO-SYSTEM
+          predicates:
+            - Path=/system/**
