@@ -13,4 +13,4 @@ spring:
         - id: micro-system
           uri: lb://MICRO-SYSTEM
           predicates:
-            - Path=/system/**
+            - Path=/sys/**
