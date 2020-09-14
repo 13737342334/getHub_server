@@ -15,3 +15,13 @@ eureka:
   client:
     service-url:
       defaultZone: http://${eureka.instance.hostname}:20000/eureka
+#Feign的超时与重试
+ribbon:
+  #连接超时
+  ConnectTimeout: 1000
+  #读超时
+  ReadTimeout: 1000
+  #同服务的最大重试次数
+  MaxAutoRetries: 0
+  #跨服务的最大重试次数
+  MaxAutoRetriesNextServer: 1
